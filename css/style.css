@@ -1065,10 +1065,6 @@ img {
         visibility: visible;
         opacity: 1;
     }
-    .top-btn:hover {
-        background-color: #F5E9DD;
-        color: black;
-    }
     /* end scroll up*/
 
 }
