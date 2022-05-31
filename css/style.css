@@ -1045,8 +1045,8 @@ img {
     /* scroll up*/
     .top-btn {
         position: fixed;
-        right: 10px;
-        bottom: 10px;
+        right: 30px;
+        bottom: 30px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
