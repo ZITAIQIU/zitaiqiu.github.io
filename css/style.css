@@ -91,7 +91,7 @@ html {
     padding: 0 10px;
 }
 #nav .logo a{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #F5E9DD;
     text-decoration: none;
 }
@@ -248,7 +248,7 @@ html {
     padding: 0 50px;
     justify-content: flex-start;
 }
-#welcome h1 {
+#welcome h2 {
     width: fit-content;
     font-size: 4rem;
     position: relative;
@@ -257,16 +257,16 @@ html {
     animation: text_reveal 0.4s ease forwards;
     animation-delay: 0.8s;
 }
-#welcome h1:nth-child(1) {
+#welcome h2:nth-child(1) {
     animation-delay: 0.8s;
 }
-#welcome h1:nth-child(2) {
+#welcome h2:nth-child(2) {
     animation-delay: 1.3s;
 }
-#welcome h1:nth-child(3) {
+#welcome h2:nth-child(3) {
     animation-delay: 1.8s;
 }
-#welcome h1 span {
+#welcome h2 span {
     position: absolute;
     background-color: #F5E9DD;
     top: 0;
@@ -276,13 +276,13 @@ html {
     animation: text_reveal_box 0.8s ease;
     animation-delay: 0.4s;
 }
-#welcome h1:nth-child(1) span {
+#welcome h2:nth-child(1) span {
     animation-delay: 0.4s;
 }
-#welcome h1:nth-child(2) span {
+#welcome h2:nth-child(2) span {
     animation-delay: 0.9s;
 }
-#welcome h1:nth-child(3) span {
+#welcome h2:nth-child(3) span {
     animation-delay: 1.4s;
 }
 
@@ -294,13 +294,15 @@ html {
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+
 }
 #about .details {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-height: 150px;
+
 }
 #about .detail-item {
     display: flex;
@@ -311,11 +313,9 @@ html {
     overflow: hidden;
     margin: 20px auto;
     border-radius: 10px;
+
 }
 #about .item-info {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     flex-basis: 50%;
     height: 100%;
     display: flex;
@@ -719,51 +719,51 @@ html {
     padding: 50px 0;
     max-width: 1200px;
 }
-#route .outline {
+.outline {
     position: relative;
     margin: 50px;
     padding: 40px 0;
 }
-#route .outline::before{
+.outline::before{
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0%;
     width: 2px;
     height: 100%;
     background: black;
 }
-#route .outline ul {
+ .outline ul {
     margin: 0;
     padding: 0;
 }
-#route .outline ul li {
+ .outline ul li {
     list-style: none;
     position: relative;
-    width: 50%;
+    width: 100%;
     padding: 20px 40px;
     box-sizing: border-box;
 }
-#route .outline ul li:nth-child(odd) {
+ .outline ul li:nth-child(odd) {
     float: left;
-    text-align: right;
+    text-align: left;
     clear: both;
 }
-#route .outline ul li:nth-child(odd)::before {
+.outline ul li:nth-child(odd)::before {
     content: '';
     position: absolute;
     top: 24px;
-    right: -11px;
+    left: -9px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: black;
 }
-#route .outline ul li:nth-child(even) {
-    float: right;
+.outline ul li:nth-child(even) {
+    float: left;
     text-align: left;
     clear: both;
 }
-#route .outline ul li:nth-child(even)::before {
+.outline ul li:nth-child(even)::before {
     content: '';
     position: absolute;
     top: 24px;
