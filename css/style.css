@@ -7,25 +7,22 @@ html {
     scroll-behavior: smooth;
 }
 .container {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:flex-start;
+    justify-content:baseline;
+ 
 }
 .section-header h1 {
+    margin-left: 20px;
+    margin-top: 150px;
     font-size: 2rem;
-    margin-top: 80px;
+
 }
-.section-header p {
-    font-size: 1rem;
-    margin: 50px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-}
+
 .section-header {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 .section-title {
     font-size: 3rem;
@@ -34,6 +31,16 @@ html {
     letter-spacing: 0.2rem;
     color: black;
     text-align: center;
+}
+.location h2 {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+.location p{
+    margin-left: 20px;
+
+    text-align: left;
 }
 .btn {
     display: inline-block;
@@ -77,6 +84,38 @@ html {
     width: 100vw;
     height: auto;
 }
+
+#nav .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#nav .section-header h1 {
+    font-size: 2rem;
+    margin-top: 80px;
+}
+#nav .section-header p {
+    font-size: 1rem;
+    margin: 50px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+#nav .section-header {
+    margin-bottom: 50px;
+}
+#nav .section-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    color: black;
+    text-align: center;
+}
+
 #nav .nav {
     min-height: 8vh;
     background-color:whitesmoke;
@@ -90,11 +129,17 @@ html {
     max-width: 1300px;
     padding: 0 10px;
 }
+
+#nav .logo{
+
+    margin-left: 10px;
+}
 #nav .logo a{
     font-size: 1rem;
     color: black;
     text-decoration: none;
 }
+
 #nav .list ul {
     list-style: none;
     position: absolute;
@@ -240,12 +285,45 @@ html {
     background-position: top center;
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
-
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+   
+}
+
+#about .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     max-width: 1200px;
+}
+#about .section-header h1 {
+    font-size: 2rem;
+    margin-top: 80px;
+}
+#about .section-header p {
+    font-size: 1rem;
+    margin: 50px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+#about .section-header {
+    margin-bottom: 50px;
+}
+#about .section-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    color: black;
+    text-align: center;
 }
 
 
@@ -275,14 +353,14 @@ html {
 }
 #about .icon {
     font-size: 30px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 #about .icon a i {
     color: black;
     transition: 0.3s;
 }
-#footer .icon:hover i{
-    font-size: 25px;
+#about .icon:hover i{
+    font-size: 35px;
 }
 
 #about .profile-image{
@@ -345,14 +423,6 @@ html {
     max-width: 1200px;
 }
 
-
-.location h2{
-    margin-top: 30px;
-}
- .location p {
-    margin-top: 10px;
-    text-align: left;
-}
 /*end awards*/
 /*end awards page*/
 
@@ -360,9 +430,13 @@ html {
 
 /*footer section*/
 #footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
     min-height: 100px;
 }
+
 #footer .footer {
     height: auto;
     flex-direction: column;
@@ -380,7 +454,7 @@ html {
 }
 #footer .icon {
     font-size: 20px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 #footer .icon a i {
     color: black;
@@ -556,7 +630,7 @@ html {
         font-size: 20px;
     }
     .location p{
-        display: none;
+        font-size: 15px;
     }
 
 
