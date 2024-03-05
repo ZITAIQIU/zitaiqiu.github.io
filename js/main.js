@@ -38,7 +38,7 @@ function reveal(){
     //get the each items top heigt of the window
     // revearpoint = 90
     for (var i = 0; i < reveal.length; i++) {
-        var revearPoint = 20;
+        var revearPoint = 50;
         var windowHeight = window.innerHeight;
         var revealTop = reveal[i].getBoundingClientRect().top;
         // when the top height of the window small than the window inner height - trigger height
