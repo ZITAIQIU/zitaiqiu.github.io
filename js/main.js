@@ -36,8 +36,9 @@ function reveal(){
     var reveal = document.querySelectorAll('.reveal');
     //Set the trigger height to 90px, get the innerHeight of the windows
     //get the each items top heigt of the window
+    // revearpoint = 90
     for (var i = 0; i < reveal.length; i++) {
-        var revearPoint = 90;
+        var revearPoint = 70;
         var windowHeight = window.innerHeight;
         var revealTop = reveal[i].getBoundingClientRect().top;
         // when the top height of the window small than the window inner height - trigger height
